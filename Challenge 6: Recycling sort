@@ -1,0 +1,16 @@
+aterial = input("What material is it? ")
+length = float(input("What is its length in cm? "))
+
+waste_type = "trash"
+
+#recycling possible
+recycling = material == "plastic" 
+if recycling:
+    waste_type = "recycling"
+    
+#Can't recycle of smaller than 7.5cm
+too_small = length < 7.5
+if too_small:
+    waste_type = "trash"
+
+print("Please deposit your item in the " + waste_type + " bin.")
