@@ -11,6 +11,6 @@ if (month == 4 or month == 6 or month == 9 or month == 11) and day == 31:
     print ("Error. Day must be within the month.")
 
 #Valid year 
-year = int(input ("Enter the year you were born (XXXX): "))
+year = int(input("Enter the year you were born (XXXX): "))
 if year < 1000 or year > 9999:
     print ("Error. Year must have four digits.")
