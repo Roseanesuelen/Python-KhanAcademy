@@ -1,0 +1,30 @@
+import avatar
+import random
+
+#Hair bow
+number_bow = random.randint(1,3)
+if number_bow == 1:
+    avatar.draw_bow ()
+
+    
+avatar.draw_eyes("medium")
+
+#nose
+number_nose = random.randint (1,2)
+if number_nose == 1:
+    avatar.draw_nose ("triangle")
+else:
+    avatar.draw_nose ("button")
+
+#mouth
+number_mouth = random.randint (1,4)
+if number_mouth == 1 or number_mouth == 2:
+    avatar.draw_mouth ("smile")   
+elif number_mouth == 3:
+    avatar.draw_mouth ("teeth")
+else:
+    avatar.draw_mouth ("neutral")
+
+#neck bow
+if number_bow == 2:
+    avatar.draw_bow()
