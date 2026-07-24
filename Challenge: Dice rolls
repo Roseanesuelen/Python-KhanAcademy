@@ -1,0 +1,17 @@
+import random
+contador = 0
+soma = 0
+
+repetitions = int(input("How many repeats would you like? "))
+
+while contador < repetitions:
+    # Roll two six-sided dice.
+    first_die = random.randint(1, 6)
+    second_die = random.randint(1, 6)
+    dice_sum = first_die + second_die
+    print("You rolled a " + str(dice_sum) + "!")
+    contador = contador + 1
+    soma = soma + dice_sum
+
+Media = soma / repetitions
+print (Media)
