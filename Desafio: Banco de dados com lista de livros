@@ -1,0 +1,12 @@
+/** Lista de livros:
+A Court of Throns and Roses (5)
+Twilight (4)
+Bridgertons (5)
+**/
+
+CREATE TABLE Favorite_Books (id INTEGER PRIMARY KEY, name TEXT, rating INTEGER);
+
+INSERT INTO Favorite_Books VALUES (1, "A Court of Throns and Roses", 5);
+INSERT INTO Favorite_Books VALUES (2, "Twilight", 4);
+INSERT INTO Favorite_Books VALUES (3, "Bridgertons", 5);
+SELECT * FROM Favorite_Books;
